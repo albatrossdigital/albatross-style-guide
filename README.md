@@ -31,3 +31,17 @@ cd <repoName>
 git remote set-url origin git@github.com:albatrossdigital/<repoName>.git
 git push origin gh-pages
 ```
+
+
+## Using
+
+#### Installing custom fonts
+Add this to a sass file. You can use https://fontie.flowyapps.com/home or http://www.flaticon.com/font-face to create all of the varients if necessary.
+```
+@font-face
+  font-family: '<fontname>'
+  src: url('../fonts/<fontname>.eot')
+  src: url('../fonts/<fontname>.eot?#iefix') format('embedded-opentype'), url('../fonts/<fontname>.woff') format('woff'), url('../fonts/<fontname>.ttf') format('truetype'), url('../fonts/<fontname>.svg') format('svg')
+  font-weight: normal
+  font-style: normal
+```
